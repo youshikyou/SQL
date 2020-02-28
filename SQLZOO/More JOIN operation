@@ -93,4 +93,14 @@ WHERE movie.yr=1978
 GROUP BY movie.title
 ORDER BY COUNT(casting.actorid) DESC,movie.title
 
+15.List all the people who have worked with 'Art Garfunkel'.
+SELECT DISTINCT actor.name 
+FROM actor JOIN casting ON casting.actorid=actor.id
+WHERE casting.movieid IN
+    (SELECT casting.movieid 
+     FROM casting 
+     WHERE casting.actorid =(SELECT actor.ID
+     FROM actor
+     WHERE actor.name='Art Garfunkel')) AND actor.name !='Art Garfunkel'
+
 
