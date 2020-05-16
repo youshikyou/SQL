@@ -1,3 +1,9 @@
+======================================
+Between AND
+边界值注意 比如Between 2014-01-01 AND 2016-12-31,这里面是从2014-01-01的0：00：00到2016-12-31的0:00:00，
+所以2016-12-31产生的数据不被记录
+=========================================
+
 Null
 Notice that NULLs are different than a zero - they are cells where data does not exist.
 When identifying NULLs in a WHERE clause, we write IS NULL or IS NOT NULL. 
