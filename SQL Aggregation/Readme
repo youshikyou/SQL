@@ -149,3 +149,18 @@ FROM orders
 GROUP BY 1 (this 1 refers to standard_qty since it is the first of the columns included in the select statement)
 ORDER BY 1 (this 1 refers to standard_qty since it is the first of the columns included in the select statement)
 
+=====================================================================
+CASE 
+The CASE statement always goes in the SELECT clause.
+
+CASE must include the following components: WHEN, THEN, and END. 
+ELSE is an optional component to catch cases that didn’t meet any of the other previous CASE conditions.
+
+You can make any conditional statement using any conditional operator (like WHERE) between WHEN and THEN. 
+This includes stringing together multiple conditional statements using AND and OR.
+You can include multiple WHEN statements, as well as an ELSE statement again, to deal with any unaddressed conditions.
+
+
+
+
+
