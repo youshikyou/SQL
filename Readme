@@ -6,7 +6,7 @@ DATA JOIN:
 JOIN ON /LEFT JOIN ON
 FULL JOIN
 Self JOINs
-UNION
+UNION /UNION ALL  UNION will drop the duplicate rows but UNION can append all the rows UNION ALL is used more often
 
 
 Operator	Example	                                                                    Result
