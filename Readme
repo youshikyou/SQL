@@ -5,9 +5,8 @@ BETWEEN AND
 DATA JOIN:
 JOIN ON /LEFT JOIN ON
 FULL JOIN
-
 Self JOINs
-One of the most common use cases for self JOINs is in cases where two events occurred, one after another
+UNION
 
 
 Operator	Example	                                                                    Result
