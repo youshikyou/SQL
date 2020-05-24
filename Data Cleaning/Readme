@@ -22,3 +22,8 @@ Note, both POSITION and STRPOS are case sensitive, so looking for A is different
 
 Therefore, if you want to pull an index regardless of the case of a letter, 
 you might want to use LOWER or UPPER to make all of the characters lower or uppercase.
+
+===============================================================================
+Each of these will allow you to combine columns together across rows. 
+In this video, you saw how first and last names stored in separate columns could be combined together to create a full name: 
+CONCAT(first_name, ' ', last_name) or with piping as first_name || ' ' || last_name.
