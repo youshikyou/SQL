@@ -18,3 +18,11 @@ For example: expression1 must be the same data type in both the first and second
 Expert Tip
 UNION removes duplicate rows.
 UNION ALL does not remove duplicate rows.
+
+SQL's two strict rules for appending data:
+
+Both tables must have the same number of columns.
+Those columns must have the same data types in the same order as the first table.
+
+A common misconception is that column names have to be the same. 
+Column names, in fact, don't need to be the same to append two tables but you will find that they typically are.
