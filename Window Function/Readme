@@ -19,3 +19,27 @@ FROM order
 
 Above is first to partition the table according to year, then order each partitioned subtable according to the occurred time.
 SUM the standard_amt_usd according to occurred time within each partitioned subtable.
+
+===============================
+ROW_NUMBER()
+RANK()
+DENSE_RANK()
+
+Above return the rank. There is difference between row_number() and rank().
+row_number() return different number if the ordered text has the same value.
+For example you order the rows by month,but there are two rows has the same month.
+row_number() returns 1 and 2 respectively to mark them differently.
+rank() , it returns 1 and 1 to make them same but for the coming month , the row will be 3.
+You can change this to use DENSE_rank(), then the row in the coming month will be 2. 
+
+
+
+
+
+
+
+
+
+
+
+
