@@ -50,4 +50,4 @@ Different databases use subtle variations on these functions,
 so be sure to look up the appropriate database’s syntax if you’re connected to a private database.The Postgres literature contains
 a lot of the related functions.
 =======================================================================================
-
+ COALESCE returns the first non-NULL value passed for each row
