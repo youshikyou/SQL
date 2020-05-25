@@ -42,3 +42,5 @@ COALESCE() 补全空白值
 
 WINDOW FUNCTION:
 OVER,ALIASE,LAG/LEAD,NTILE,RANK(),DENSE_RANK(),ROW_NUMBER(),PARTITION BY
+
+LIMIT cannot speed up when there is an aggregation. 
