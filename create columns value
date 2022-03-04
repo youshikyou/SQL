@@ -1,0 +1,13 @@
+DECLARE 
+    @columns NVARCHAR(MAX) = '';
+
+SELECT 
+    @columns += QUOTENAME(category_name) + ','
+FROM 
+    production.categories
+ORDER BY 
+    category_name;
+
+SET @columns = LEFT(@columns, LEN(@columns) - 1);
+
+PRINT @columns;
