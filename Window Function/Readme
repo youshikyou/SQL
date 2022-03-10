@@ -52,7 +52,8 @@ then NTILE will divide the rows into as many groups as there are members (rows) 
 but then stop short of the requested number of groups. If you’re working with very small windows, keep this in mind and consider 
 using quartiles or similarly small bands.
 
-You can check out a complete list of window functions in Postgres (the syntax Mode uses) in the Postgres documentation.
+aggregationfun() over(partition by , order by, range/row between n preceding and n following / current row).
+range check the duplicates of the "order by ". If "order by" field duplicates, it will do it together.
 
 
 
