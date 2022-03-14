@@ -44,3 +44,14 @@ WINDOW FUNCTION:
 OVER,ALIASE,LAG/LEAD,NTILE,RANK(),DENSE_RANK(),ROW_NUMBER(),PARTITION BY
 
 LIMIT cannot speed up when there is an aggregation. 
+
+%%%%%%%%%%read the columns info%%%%%%%%%%%%%%
+-- Pull column_name & data_type from the columns table
+SELECT 
+	column_name,
+  data_type
+FROM information_schema.columns
+-- Filter for the table 'country_stats'
+WHERE table_name = 'table';
+
+
