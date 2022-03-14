@@ -62,5 +62,8 @@ The INITCAP(fieldName) function changes the case of all characters in fieldName 
 The LEFT(fieldName,N) function returns the left N characters of the string fieldName.
 The SUBSTRING(fieldName from S for N) returns N characters starting from position S of the string fieldName. Note that both from S and for N are optional.
 REPLACE(fieldName, 'searchFor', 'replaceWith')
+TRIM([characters FROM ]string) 
+"characters FROM "  Optional,  Specific characters to remove.  
+"string" Required, The string to remove spaces or characters from
 
 
