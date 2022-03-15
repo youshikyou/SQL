@@ -1,0 +1,13 @@
+SELECT
+	-- Pull month and country_id
+	date_part('month',date) AS month,
+	country_id,
+    -- Pull in current month views
+    sum(views) AS month_views,
+    -- Pull in last month views
+    lag(sum(views)) over(partition by country_id order by date_part('month',date)) AS previous_month_views,
+    -- Calculate the percent change
+    sum(views)/ (lag(sum(views)) over(partition by country_id order by date_part('month',date))) -1 AS perc_change
+FROM web_data
+WHERE date <= '2018-05-31'
+GROUP BY month, country_id;
